@@ -10,6 +10,8 @@ Smallest and Fastest Data Structure to query english words.
 |    Trie      |530 ms             |50 ms             |26 ms               |
 |   HashMap    |180 ms             |110 ms            |14 ms               |
 |**MagicDict** |**13 ms**          |**3 ms**          |**1 ms**            |
+**Note:** Current benchmarks have been calculated on
+[370k valid english words](https://github.com/dwyl/english-words/blob/master/words_alpha.txt)
 
 
 ## Build
