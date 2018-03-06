@@ -9,7 +9,7 @@ Smallest and Fastest Data Structure to query english words.
 |     Set      |461 ms             |220 ms            |39 ms               |
 |    Trie      |530 ms             |50 ms             |26 ms               |
 |   HashMap    |180 ms             |110 ms            |14 ms               |
-|**MagicDict** |**13 ms**          |**3 ms**          |**1 ms**                |
+|**MagicDict** |**13 ms**          |**3 ms**          |**1 ms**            |
 
 
 ## Build
