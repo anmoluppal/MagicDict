@@ -1,11 +1,17 @@
 # MagicDict
 Smallest and Fastest Data Structure to query english words.
 
+**Note:** This is implementation of [Bloom Filter]
+(https://en.wikipedia.org/wiki/Bloom_filter) for Trie Data Structure.
+It can be used to test whether query word is valid or not.
+False positive matches are possible, but false negatives are not –
+in other words, a query returns either "possibly in set" or "definitely
+not in set".
+
 ## Benchmarks:
 
 |Data Strcuture|Insert (370k words)|Query (100k words)| Delete (100k words)|
 |--------------|-------------------|------------------|--------------------|
-|    MySql     |10,000 ms          |5,396 ms          |2,729 ms            |
 |     Set      |461 ms             |220 ms            |39 ms               |
 |    Trie      |530 ms             |50 ms             |26 ms               |
 |   HashMap    |180 ms             |110 ms            |14 ms               |

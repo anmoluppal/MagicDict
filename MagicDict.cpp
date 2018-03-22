@@ -9,8 +9,9 @@ void MagicDict::insert(const char *word, const size_t sz) {
     if (sz > mMaxWordLen) {
         return;
     }
-    size_t sz_1 = sz - 1;
     if (!isInputWordValid(word, sz)) return;
+
+    size_t sz_1 = sz - 1;
 
     for (size_t i = 0; i < sz_1; i++) {
         mLayerStack[i][word[i] - 'a'] |= mIsChildMask[word[i + 1] - 'a'];
@@ -23,8 +24,9 @@ bool MagicDict::isWordExists(const char *word, const size_t sz) const {
     if (sz > mMaxWordLen) {
         return false;
     }
-    size_t sz_1 = sz - 1;
     if (!isInputWordValid(word, sz)) return false;
+
+    size_t sz_1 = sz - 1;
 
     for (size_t i = 0; i < sz_1; i++) {
         if ((mLayerStack[i][word[i] - 'a'] & mIsChildMask[word[i + 1] - 'a']) == 0) {
@@ -39,8 +41,9 @@ void MagicDict::remove(const char *word, const size_t sz) {
     if (sz > mMaxWordLen) {
         return;
     }
-    size_t sz_1 = sz - 1;
     if (!isInputWordValid(word, sz)) return;
+
+    size_t sz_1 = sz - 1;
 
     for (size_t i = 0; i < sz_1; i++) {
         if ((mLayerStack[i][word[i] - 'a'] & mIsChildMask[word[i + 1] - 'a']) == 0) {

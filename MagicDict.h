@@ -1,5 +1,5 @@
-#ifndef MINI_DICT_H
-#define MINI_DICT_H
+#ifndef MAGIC_DICT_H
+#define MAGIC_DICT_H
 
 #include <cmath>
 #include <vector>
